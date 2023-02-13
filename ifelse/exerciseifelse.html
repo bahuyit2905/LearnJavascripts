@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise ifelse</title>
+</head>
+<body>
+    <script>
+        let inputWage = prompt("Nhap luong thang:")
+        let wage = parseInt(inputWage)
+        if(wage >= 80000000){
+            document.write("Luong cua ban bac I");
+        } else if (80000000 <= wage && wage > 52000000 ){
+            document.write("Luong cua ban bac II");
+        } else if (wage <= 52000000 && wage > 32000000 ){
+            document.write("Luong cua ban bac III");
+        } else if(wage <= 32000000 && wage > 18000000){
+            document.write("Luong cua ban bac IV");
+        } else if (wage <= 18000000 && wage > 10000000){
+            document.write("Luong cua ban bac V");    
+        } else if (wage <= 10000000 && wage > 5000000){
+            document.write("Luong cua ban bac VI");
+        } else {
+            document.write("Luong cua ban bac VII");
+        }
+    </script>
+</body>
+</html>

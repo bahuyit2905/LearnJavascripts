@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency conversion</title>
+</head>
+<body>
+    <form action="">
+        <p>Amount</p>
+        <input type="text" id="inputAmount">
+        <p>From Currency</p>
+        <select name="" id="fromCurr">
+            <option value="vnd">VND</option>
+            <option value="usd">USD</option>
+        </select>
+        <p>To Currency</p>
+        <select name="" id="toCurr">
+            <option value="vnd">VND</option>
+            <option value="usd">USD</option>
+        </select>
+        <button id="btns" onclick="conversion()">Convert</button>
+    </form>
+    <script>
+           
+        function conversion() {
+            let inputConversion = document.getElementById("inputAmount").value;
+            let fromCurr = document.getElementById("fromCurr").value;
+            let toCurr = document.getElementById("toCurr").value;
+            if(fromCurr==toCurr){
+                // alert(inputConversion);
+                document.write("Result = " + inputConversion);
+                // document.getElementById("res").innerHTML = inputConversion;
+            }
+            if(fromCurr=="vnd" && toCurr=="usd"){
+                // alert(inputConversion/24000);
+                document.write("Result = " + inputConversion/24000);
+            }
+            if(fromCurr="usd" && toCurr=="vnd"){
+                // alert(inputConversion*24000);
+                document.write("Result = " + inputConversion*24000)
+            }
+        }
+    </script>
+</body>
+</html>
