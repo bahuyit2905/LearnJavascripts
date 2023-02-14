@@ -7,7 +7,7 @@
     <title>Currency conversion</title>
 </head>
 <body>
-    <form action="">
+    <!-- <form action="" style="text-align: center;">
         <p>Amount</p>
         <input type="text" id="inputAmount">
         <p>From Currency</p>
@@ -41,7 +41,39 @@
                 // alert(inputConversion*24000);
                 document.write("Result = " + inputConversion*24000)
             }
+        } -->
+    <!-- </script> -->
+
+        <form action="">
+            <p>Amount</p>
+            <input type="text" id="inputCurr">
+            <p>From Currency</p>
+            <select name="" id="select1">
+                <option value="vnd">VND</option>
+                <option value="usd">USD</option>
+            </select>
+            <p>To Currency</p>
+            <select name="" id="select2">
+                <option value="vnd">VND</option>
+                <option value="usd">USD</option>
+            </select>
+            <button type="button" onclick="conVerts()">Convert</button>
+            <p id="conv"></p>
+        </form>
+        <script>
+            function conVerts(){
+                let inputCurrency = document.getElementById("inputCurr").value;
+                let select1 = document.getElementById('select1').value;
+                let select2 = document.getElementById('select2').value;
+                if(select1 == select2){
+                    // alert(inputCurrency);
+                    document.getElementById("conv").innerHTML = 'conver:' + inputCurrency;
+                } if (select1 == 'vnd' && select2 == 'usd'){
+                    document.getElementById("conv").innerHTML = 'conver:' + (inputCurrency/24000);
+                } if (select1 == 'usd' && select2 == 'vnd'){
+                    document.getElementById("conv").innerHTML = 'conver:' + (inputCurrency*24000);
+            }
         }
-    </script>
+        </script>
 </body>
 </html>
