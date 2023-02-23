@@ -1,0 +1,12 @@
+.container-fluid {
+    max-width: 940px;
+} 
+
+img {
+    display: block;
+    margin: 0.5em;
+    padding: 0.2em;
+    box-shadow: 2px 3px 3px black;
+    width: 600px;
+    height: 150px;
+}

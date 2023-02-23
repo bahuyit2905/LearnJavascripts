@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime</title>
+</head>
+<body>
+    <script>
+        let number = +prompt("Input number random");
+        // let number = 7;
+        if(number < 2) {
+            document.write(' Not Number Prime')
+        } else if (number == 2) {
+            document.write('Number Prime')
+        } else {
+            let i =2 ;
+            let isPrime = true;
+            for(; i < number; i++){
+                if(number % i ==0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+             if(isPrime == true) {
+                document.write(`${number}: Prime number`);
+             } else {
+                document.write(`${number}: Not Prime number`);
+             }
+            }
+        
+
+    </script>
+</body>
+</html>

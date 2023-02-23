@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>SwapImages</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <img id="img1" src="./images/funny-cat1_part1x1.jpg" alt="" onclick="changeImg()" >
+        <img id="img2" src="./images/monkey_part2x1.jpg" alt="" onclick="myimgs()">
+        <img id="img3" src="./images/panda_swap_part3x1.jpg" alt="" onclick="imgThree()">
+        <img id="img4" src="./images/funny-cat1_part4x1.jpg" alt=""  onclick="imgFour()">
+        <img id="img5" src="./images/panda_swap_part5x1.jpg" alt=""  onclick="imgFive()">
+    </div>
+    <script>
+        function changeImg(){
+            let displayImg = document.getElementById("img1");
+            if(displayImg.src.match('./images/funny-cat1_part1x1.jpg')){
+                displayImg.src = './images/monkey_part1x1.jpg'
+            } else if(displayImg.src.match('./images/monkey_part1x1.jpg'))  {
+                displayImg.src = './images/panda_swap_part1x1.jpg'
+            } else {
+                displayImg.src = './images/funny-cat1_part1x1.jpg'
+            }
+            }
+
+        function myimgs(){
+            let displayImg = document.getElementById("img2");
+            if(displayImg.src.match('./images/funny-cat1_part2x1.jpg')){
+                displayImg.src = './images/monkey_part2x1.jpg'
+            } else if(displayImg.src.match('./images/monkey_part2x1.jpg'))  {
+                displayImg.src = './images/panda_swap_part2x1.jpg'
+            } else {
+                displayImg.src = './images/funny-cat1_part2x1.jpg'
+            }
+            }
+
+        
+            
+        function imgThree(){
+            let displayImg = document.getElementById("img3");
+            if(displayImg.src.match('./images/funny-cat1_part3x1.jpg')){
+                displayImg.src = './images/monkey_part3x1.jpg'
+            } else if(displayImg.src.match('./images/monkey_part3x1.jpg'))  {
+                displayImg.src = './images/panda_swap_part3x1.jpg'
+            } else {
+                displayImg.src = './images/funny-cat1_part3x1.jpg'
+            }
+            }
+        
+            function imgFour(){
+            let displayImg = document.getElementById("img4");
+            if(displayImg.src.match('./images/funny-cat1_part4x1.jpg')){
+                displayImg.src = './images/monkey_part4x1.jpg'
+            } else if(displayImg.src.match('./images/monkey_part4x1.jpg'))  {
+                displayImg.src = './images/panda_swap_part4x1.jpg'
+            } else {
+                displayImg.src = './images/funny-cat1_part4x1.jpg'
+            }
+            }
+
+            function imgFive(){
+            let displayImg = document.getElementById("img5");
+            if(displayImg.src.match('./images/funny-cat1_part5x1.jpg')){
+                displayImg.src = './images/monkey_part5x1.jpg'
+            } else if(displayImg.src.match('./images/monkey_part5x1.jpg'))  {
+                displayImg.src = './images/panda_swap_part5x1.jpg'
+            } else {
+                displayImg.src = './images/funny-cat1_part5x1.jpg'
+            }
+            }
+
+            //cach 2
+            //xay dung ham function
+            //dung Mth.random
+            // khai bao let rnd = Math.cell(Math.random()*3);
+            // let displayImg = document.getElementById("img5").src = 'ảnh'.${rnd}.jpg
+            //
+    </script>
+</body>
+</html>
